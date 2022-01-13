@@ -11,5 +11,6 @@ public interface ReplyService {
 	// 댓글 목록 설계
 	public ArrayList<ReplyDTO> list(int bno);
 	
-	
+	// 댓글 수정을 하기 위해 댓글 내용 가져오기
+	public ReplyDTO detail(int rno);
 }

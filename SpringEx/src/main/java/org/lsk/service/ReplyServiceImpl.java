@@ -16,5 +16,11 @@ public class ReplyServiceImpl implements ReplyService {
 	
 	public ArrayList<ReplyDTO> list(int bno) {
 		return rmapper.list(bno);
+	}
+
+	@Override
+	public ReplyDTO detail(int rno) {
+		// TODO Auto-generated method stub
+		return rmapper.detail(rno);
 	};
 }

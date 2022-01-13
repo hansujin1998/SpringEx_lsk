@@ -44,4 +44,11 @@ public class ReplyController {
 		// detail?bno=2 -> detail/bno (@PathVariable) - REST방식에서 주로 사용, URL경로의 일부를 파라미터로 사용하고자 할 때
 	}
 	
+	// 댓글수정을 하기위해 댓글 내용 가져오기
+	@GetMapping(value="{rno}",produces={MediaType.APPLICATION_JSON_VALUE})
+	public ResponseEntity<ReplyDTO> getDetail(@PathVariable int rno){ //select결과가 한건이기때문에 배열이 필요없다.
+		System.out.println("sysout 값="+rno);
+		return new ResponseEntity<>(rservice.detail(rno),HttpStatus.OK);
+		// detail?bno=2 -> detail/bno (@PathVariable) - REST방식에서 주로 사용, URL경로의 일부를 파라미터로 사용하고자 할 때
+	}
 }
