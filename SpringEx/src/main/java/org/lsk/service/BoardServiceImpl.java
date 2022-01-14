@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.lsk.domain.BoardDTO;
 import org.lsk.domain.Criteria;
+import org.lsk.domain.ReplyDTO;
 import org.lsk.mapper.BoardMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,5 +49,6 @@ public class BoardServiceImpl implements BoardService{
 	public int getTotalCount(Criteria cri) {
 		return bmapper.getTotalCount(cri);
 	};
+
 	
 }

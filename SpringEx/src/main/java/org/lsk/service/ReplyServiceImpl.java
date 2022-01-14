@@ -22,5 +22,18 @@ public class ReplyServiceImpl implements ReplyService {
 	public ReplyDTO detail(int rno) {
 		// TODO Auto-generated method stub
 		return rmapper.detail(rno);
+	}
+
+	@Override // 댓글수정 설계된 것을 구현
+	public int update(ReplyDTO rdto) {
+		// TODO Auto-generated method stub
+		return rmapper.update(rdto);
+	}
+
+	@Override // 댓글삭제 설계된 것을 구현
+	public int remove(ReplyDTO rdto) {
+		// TODO Auto-generated method stub
+		return rmapper.remove(rdto);
 	};
+	
 }

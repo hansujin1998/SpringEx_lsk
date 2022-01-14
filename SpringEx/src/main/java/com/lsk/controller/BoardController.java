@@ -1,5 +1,5 @@
-package com.lsk.controller;
 
+package com.lsk.controller;
 import org.lsk.domain.BoardDTO;
 import org.lsk.domain.Criteria;
 import org.lsk.domain.PageDTO;
