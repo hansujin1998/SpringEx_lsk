@@ -47,8 +47,8 @@ $(document).ready(function() {
 			data : formData,
 			processData : false,
 			contentType : false,
-			success : function() { // 성공시 실행할 함수
-				alert("업로드에 성공하였습니다.")
+			success : function(result) { // 성공시 실행할 함수
+				console.log(result);
 			}
 		})
 	})

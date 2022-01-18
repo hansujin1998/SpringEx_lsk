@@ -87,6 +87,14 @@
 			<version>2.7.4</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
+		<dependency><!-- 파일생성시 썸네일 이미지 -->
+			<groupId>net.coobird</groupId>
+			<artifactId>thumbnailator</artifactId>
+			<version>0.4.8</version>
+		</dependency>
+
+
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -167,7 +175,7 @@
 		</dependency>
 
 		<!-- Servlet -->
-<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency><!-- 파일 업로드 라이브러리 -->
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -188,7 +196,7 @@
 		</dependency>
 
 		<!-- Test -->
-<!-- spring test 의존성 주입 -->
+		<!-- spring test 의존성 주입 -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -196,7 +204,7 @@
 			<version>5.0.7.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
